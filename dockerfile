@@ -2,6 +2,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0
 RUN dotnet tool install -g dotnet-stryker
 
-RUN dotnet stryker
+COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
