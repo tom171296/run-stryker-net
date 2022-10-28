@@ -12,6 +12,6 @@ outputs:
 
 runs:
   using: 'docker'
-  image: 'execute.dockerfile'
+  image: 'dockerfile'
   args:
     - ${{ inputs.pathToProjectfile }}
