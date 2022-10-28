@@ -3,7 +3,7 @@ author: "Tom van den Berg, Dylan van Gils"
 description: "test description"
 inputs:
   testProject:
-    description: "The path to the test project (e.g. BusinessLogic.Test/)"
+    description: "The path to the test project directory (e.g. BusinessLogic.Test/)"
     required: true
 
 outputs:
