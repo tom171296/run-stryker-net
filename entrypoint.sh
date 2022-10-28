@@ -7,7 +7,7 @@ echo "Changing direcotry to $testProject"
 cd $testProject
 
 echo "Starting Striker.NET run"
-dotnet stryker --break-at 50
+dotnet stryker
 
 $htmlReport = ./StrykerOutput/**/*.html
 
