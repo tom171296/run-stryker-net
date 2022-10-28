@@ -5,4 +5,4 @@ RUN dotnet tool install -g dotnet-stryker
 COPY entrypoint.sh /entrypoint.sh
 
 # RUN dotnet stryker --test-project Minor.Nijn.Test/Minor.Nijn.Test.csproj 
-ENTRYPOINT [ "./entrypoint.sh" ]
+ENTRYPOINT ["/entrypoint.sh"]
