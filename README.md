@@ -18,13 +18,10 @@ There are no outputs from this action.
 # File: .github/workflows/mutation-test.yaml
 
 on:
-  # Manual run of the mutation workflow
-  workflow_dispatch:
-
-  # Scheduled run of the mutation test workflow, for example every Wednesday on 2 AM.
-  schedule:
-    - cron: '0 2 * * 4'
-
+  # Run the mutation tests when chages are pushed to the main branch
+  push:
+    branches:
+      - 'main'
 jobs:
   mutation-test:
     uses: actions/checkout@v3
