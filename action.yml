@@ -2,20 +2,19 @@ name: "test-action"
 author: "Tom van den Berg, Dylan van Gils"
 description: "test description"
 inputs:
-  testInput:
-    description: "some description here"
-    required: false
-    default: '1'
-  testInput2:
-    description: "another test;"
+  pathToProjectfile:
+    description: "Path to the csproj file to run Stryker on."
     required: true
 
 outputs:
   testOutput:
     description: "some output here"
 
+volumes:
+  - ${{GITHUB_WORKSPACE}}:/workspace
+
 runs:
   using: 'docker'
-  image: 'dockerfile'
+  image: 'execute.dockerfile'
   args:
-    - ${{ inputs.testInput2 }}
+    - ${{ inputs.pathToProjectfile }}
