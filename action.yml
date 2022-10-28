@@ -1,4 +1,4 @@
-name: "Run-Stryker-DotNet"
+name: "Run-Stryker-DotNet-action"
 author: "Tom van den Berg, Dylan van Gils"
 description: "test description"
 branding:
