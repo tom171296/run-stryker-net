@@ -9,7 +9,7 @@ cd $testProject
 echo "Starting Striker.NET run"
 dotnet stryker
 
-htmlReport=$(cat ./StrykerOutput/**/**/*.html)
+htmlReport=$(cat ./StrykerOutput/**/**/*.html | base64)
 
 echo $htmlReport
 echo "htmlReport=$htmlReport" >> $GITHUB_OUTPUT
