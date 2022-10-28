@@ -9,10 +9,6 @@ inputs:
     description: "The path to the test project directory (e.g. BusinessLogic.Test/)"
     required: true
 
-outputs:
-  htmlReport:
-    description: "some output here"
-
 runs:
   using: 'docker'
   image: 'dockerfile'
