@@ -9,8 +9,6 @@ cd $testProject
 echo "Starting Striker.NET run"
 dotnet stryker
 
-$htmlReport = ./StrykerOutput/**/*.html
+htmlReport=$(cat ./StrykerOutput/**/**/*.html)
 
-echo $htmlReport
-
-# echo "htmlReport=$htmlReport" >> $GITHUB_OUTPUT
+echo "htmlReport=$htmlReport" >> $GITHUB_OUTPUT
