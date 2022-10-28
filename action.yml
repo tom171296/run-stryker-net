@@ -1,0 +1,21 @@
+name: "test-action"
+author: "Tom van den Berg, Dylan van Gils"
+description: "test description"
+inputs:
+  testInput:
+    description: "some description here"
+    required: false
+    default: '1'
+  testInput2:
+    description: "another test;"
+    required: true
+
+outputs:
+  testOutput:
+    description: "some output here"
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.testInput }}
