@@ -14,8 +14,25 @@ There are no outputs from this action.
 
 ## Example usage
 
-```
-uses: tom171296/test-action-hacktober@v1
-with:
-    testProject: "Minor.Nijn.Test/"
+``` yaml
+# File: .github/workflows/mutation-test.yaml
+
+on:
+  # Run the mutation tests when chages are pushed to the main branch
+  push:
+    branches:
+      - 'main'
+jobs:
+  mutation-test:
+    uses: actions/checkout@v3
+
+    uses: tom171296/run-stryker-net@v1
+      with:
+        testProject: "BusinessLogic.Test/" # required
+        breakAt: "75" # Optional
+
+    uses: actions/upload-artifact@v3
+    with:
+      name: html-report
+      path: ${{github.workspace}}/BusinessLogic.Test/StrykerOutput/**/**/*.html
 ```
