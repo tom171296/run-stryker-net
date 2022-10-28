@@ -2,8 +2,8 @@ name: "test-action"
 author: "Tom van den Berg, Dylan van Gils"
 description: "test description"
 inputs:
-  pathToCsproj:
-    description: "Path to the csproj file to run Stryker on."
+  testProject:
+    description: "The path to the test project directory (e.g. BusinessLogic.Test/)"
     required: true
 
 outputs:
@@ -13,3 +13,5 @@ outputs:
 runs:
   using: 'docker'
   image: 'dockerfile'
+  args:
+    - ${{ inputs.testProject }}
