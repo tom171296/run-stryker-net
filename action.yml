@@ -1,6 +1,9 @@
 name: "test-action"
 author: "Tom van den Berg, Dylan van Gils"
 description: "test description"
+branding:
+  icon: 'github'
+  color: 'green'
 inputs:
   testProject:
     description: "The path to the test project directory (e.g. BusinessLogic.Test/)"
