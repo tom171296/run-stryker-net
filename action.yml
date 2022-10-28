@@ -8,6 +8,10 @@ inputs:
   testProject:
     description: "The path to the test project directory (e.g. BusinessLogic.Test/)"
     required: true
+  breakAt:
+    description: "When threshold break is set to anything other than 0 and the mutation score is lower than the threshold Stryker will exit with a non-zero code."
+    required: false
+    default: "0"
 
 outputs:
   htmlReport:
@@ -18,3 +22,4 @@ runs:
   image: 'dockerfile'
   args:
     - ${{ inputs.testProject }}
+    - ${{ inputs.breakAt }}
