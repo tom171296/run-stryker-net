@@ -7,7 +7,7 @@ inputs:
     required: true
 
 outputs:
-  mutationScore:
+  htmlReport:
     description: "some output here"
 
 runs:
