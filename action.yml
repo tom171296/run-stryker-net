@@ -15,7 +15,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'dockerfile'
+  image: 'run-stryker-net.dockerfile'
   args:
     - ${{ inputs.testProject }}
     - ${{ inputs.breakAt }}
