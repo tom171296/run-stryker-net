@@ -4,6 +4,4 @@ RUN dotnet tool install -g dotnet-stryker
 
 ARG pathToCsproj
 
-COPY ./workspace ./
-
 RUN ls
