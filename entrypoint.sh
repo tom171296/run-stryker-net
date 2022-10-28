@@ -1,6 +1,8 @@
-#!/bin/sh
-export PATH="$PATH:/root/.dotnet/tools"
+#!/bin/sh -l
+testProject=$1
 
-cd Minor.Nijn.Test
+echo "Changing direcotry to $testProject"
+cd $testProject
 
+echo "Starting Striker.NET run"
 dotnet stryker
