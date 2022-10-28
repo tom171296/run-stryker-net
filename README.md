@@ -1,4 +1,4 @@
-# Hello world docker action
+# Run Stryker for .Net github action
 
 This actions runs [Stryker for .Net](https://stryker-mutator.io/docs/stryker-net/introduction/) on your specified test project.
 
