@@ -15,7 +15,7 @@ There are no outputs from this action.
 ## Example usage
 
 ```
-uses: tom171296/test-action-hacktober@main
+uses: tom171296/test-action-hacktober@v1
 with:
     testProject: "Minor.Nijn.Test/"
 ```
