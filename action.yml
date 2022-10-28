@@ -2,7 +2,7 @@ name: "test-action"
 author: "Tom van den Berg, Dylan van Gils"
 description: "test description"
 branding:
-  icon: 'github'
+  icon: 'Github'
   color: 'green'
 inputs:
   testProject:
