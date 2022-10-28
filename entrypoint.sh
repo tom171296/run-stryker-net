@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ls /github/workspace
+dotnet stryker --test-project Minor.Nijn.Test/Minor.Nijn.Test.csproj
