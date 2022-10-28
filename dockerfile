@@ -2,8 +2,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0
 
 COPY entrypoint.sh /entrypoint.sh
-
-RUN dotnet tool install -g dotnet-stryker \
-    && echo "${PATH}:/root/.dotnet/tools" >> /etc/bash.bashrc
+RUN dotnet tool install -g dotnet-stryker
 
 ENTRYPOINT ["/entrypoint.sh"]
