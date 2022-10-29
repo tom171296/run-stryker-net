@@ -1,12 +1,12 @@
-# Run Stryker for .Net github action
+# Run Stryker for .Net GiHub action
 
-This actions runs [Stryker for .Net](https://stryker-mutator.io/docs/stryker-net/introduction/) on your specified test project.
+This action runs [Stryker for .Net](https://stryker-mutator.io/docs/stryker-net/introduction/) on your specified test project.
 
 ## Inputs
 
 ## `testProject`
 
-**Required** The path to the directory of the test project that needs to be tested by stryker. No default.
+**Required** The path to the directory of the test project that needs to be tested by Stryker. No default.
 
 ## Outputs
 
@@ -18,7 +18,7 @@ There are no outputs from this action.
 # File: .github/workflows/mutation-test.yaml
 
 on:
-  # Run the mutation tests when chages are pushed to the main branch
+  # Run the mutation tests when changes are pushed to the main branch
   push:
     branches:
       - 'main'
