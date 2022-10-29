@@ -1,9 +1,7 @@
 name: Create base image
 run-name: ${{ github.actor }} is creating a new base image.
 on:
-  push:
-    branches:
-      - 'main'
+  workflow_dispatch:
 
 env:
   REGISTRY: ghcr.io
