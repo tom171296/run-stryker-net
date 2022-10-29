@@ -19,3 +19,6 @@ runs:
   args:
     - ${{ inputs.testProject }}
     - ${{ inputs.breakAt }}
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    PR_NUMBER: ${{ github.event.number }}
