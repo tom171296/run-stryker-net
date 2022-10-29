@@ -20,6 +20,9 @@ dotnet stryker `
   --reporter json `
   --reporter cleartext
 
+# Change location back to root
+Set-Location -Path /github/workspace
+
 ###
 # Analyze report
 #
