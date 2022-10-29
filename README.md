@@ -1,7 +1,23 @@
-# Run Stryker.NET GitHub action
+# Run Stryker.NET v1
 
 This action runs [Stryker.NET](https://stryker-mutator.io/docs/stryker-net/introduction/) on your specified test project.
 
+# What's new
+- Run [Stryker.Net](https://stryker-mutator.io/docs/stryker-net/introduction/) in your github with a single action
+    - Have the stryker HTML report available in your workspace
+- Fail the action run if your mutation score isn't met
+    
+
+# Usage
+
+See [action.yml](./action.yml)
+
+## Run Stryker.Net on a single test project
+```
+uses: tom171296/run-stryker-net@vmain
+    with:
+        testProject: "BusinessLogic.Test/" # required
+```
 ## Inputs
 
 ### `testProject`
@@ -30,7 +46,7 @@ jobs:
   mutation-test:
     uses: actions/checkout@v3
 
-    uses: tom171296/run-stryker-net@v1
+    uses: tom171296/run-stryker-net@main
       with:
         testProject: "BusinessLogic.Test/" # required
         breakAt: "75" # Optional
