@@ -10,7 +10,7 @@ This action runs [Stryker for .Net](https://stryker-mutator.io/docs/stryker-net/
 
 ### `breakAt`
 
-**Optional** Set the minimal mutation score threshold for the action to succeed. If the threshold is not met, the action will fail the pipeline.
+**Optional** Set the minimal mutation score threshold for the action to succeed. If the threshold is not met, the action will fail the pipeline. The default value is `0`. 
 
 ## Outputs
 
