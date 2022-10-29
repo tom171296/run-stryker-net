@@ -4,9 +4,13 @@ This action runs [Stryker for .Net](https://stryker-mutator.io/docs/stryker-net/
 
 ## Inputs
 
-## `testProject`
+### `testProject`
 
 **Required** The path to the directory of the test project that needs to be tested by Stryker. No default.
+
+### `breakAt`
+
+**Optional** Set the minimal mutation score threshold for the action to succeed. If the threshold is not met, the action will fail the pipeline.
 
 ## Outputs
 
