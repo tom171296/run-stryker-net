@@ -15,8 +15,8 @@ See [action.yml](./action.yml)
 ## Run Stryker.Net on a single test project
 ```
 uses: tom171296/run-stryker-net@vmain
-    with:
-        testProject: "BusinessLogic.Test/" # required
+  with:
+    testProject: "BusinessLogic.Test/" # required
 ```
 ## Inputs
 
