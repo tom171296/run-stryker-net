@@ -1,6 +1,6 @@
-# Run Stryker for .Net GiHub action
+# Run Stryker.NET GitHub action
 
-This action runs [Stryker for .Net](https://stryker-mutator.io/docs/stryker-net/introduction/) on your specified test project.
+This action runs [Stryker.NET](https://stryker-mutator.io/docs/stryker-net/introduction/) on your specified test project.
 
 ## Inputs
 
