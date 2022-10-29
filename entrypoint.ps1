@@ -33,6 +33,9 @@ $pr = $env:PR_NUMBER
 # Login to the github CLI.
 gh auth login --with-token $env:GITHUB_TOKEN
 
+# Get the report
+$report = Get-ChildItem -Filter "$($TestProject)/StrykerOutput/**/**/*.json" | Select-Object -First 1 | ConvertFrom-Json
+
 # Get the PR commits
 Write-Host "Fetch PR #$pr commits"
 $shas = gh api `
