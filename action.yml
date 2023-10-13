@@ -1,5 +1,5 @@
 name: "Run-Stryker-DotNet-action"
-author: "Tom van den Berg, Dylan van Gils"
+author: "Tom van den Berg"
 description: "test description"
 branding:
   icon: 'zap'
