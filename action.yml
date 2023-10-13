@@ -1,6 +1,6 @@
 name: "Run-Stryker-DotNet-action"
 author: "Tom van den Berg"
-description: "test description"
+description: "Github action to run Stryker.NET"
 branding:
   icon: 'zap'
   color: 'green'
